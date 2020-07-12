@@ -1,4 +1,5 @@
 # Faker_elasticsearch
+![anaconda](https://anaconda.org/fakt/faker_elasticsearch/badges/version.svg)
 
 Faker_elasticsearch is a conda package that you can use to generate and store fake data in your elastic search server.
 
