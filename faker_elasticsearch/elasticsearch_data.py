@@ -1,6 +1,6 @@
 import asyncio
 
-from es_test_data import CreateFakeData
+from faker_elasticsearch.es_test_data import CreateFakeData
 
 
 def create_fake_data(path_to_config: str):
