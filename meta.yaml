@@ -1,37 +1,24 @@
-{% set name = "faker_elasticsearch" %}
-{% set version = "1.0.0" %}
-
 package:
-  name: "{{ name }}"
-  version: "{{ version }}"
+  name: faker_elasticsearch
+  version: "1.0.0"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: f73de30342e1dd6bb5080c4dea0693ad941e62fae001a2068244a0e0929bd714
+  path: .
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script:
+    - python setup.py install
 
 requirements:
   host:
-    - pip
-    - python
-  run:
-    - python
+    - tornado
 
-#test:
-#  imports:
-#    - faker_elasticsearch
+test:
+  imports:
+    - faker_elasticsearch
 
 about:
-  home: "https://github.com/akashzcoder/faker_elasticsearch"
   license: MIT
-  license_family: MIT
-  license_file: 
-  summary: "Fake data creation for elasticsearch database."
-  doc_url: 
-  dev_url: 
 
 extra:
   recipe-maintainers:

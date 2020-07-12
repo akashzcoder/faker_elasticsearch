@@ -7,7 +7,7 @@ Faker_elasticsearch is a conda package that you can use to generate and store fa
 Use the package manager [conda](url) to install faker_elasticsearch.
 
 ```bash
-conda install faker_elasticsearch
+conda install -c fakt faker_elasticsearch
 ```
 
 ## Usage
