@@ -22,7 +22,7 @@ requirements:
 
 test:
   imports:
-    - click
+    - faker_elasticsearch
 
 about:
   home: "https://github.com/akashzcoder/faker_elasticsearch"
